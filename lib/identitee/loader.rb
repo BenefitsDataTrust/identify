@@ -5,7 +5,7 @@ module Identitee
     end
 
     def loadable? filename
-      File.exists? full_path(filename)
+      File.exist? full_path(filename)
     end
 
     def lazy_load filename
