@@ -16,7 +16,7 @@ module Identitee
       it "loads the file" do
         loader = Loader.new
 
-        expect(File).to receive(:exists?).with('known.rb').and_return(true)
+        expect(File).to receive(:exist?).with('known.rb').and_return(true)
 
         expect(loader).to receive(:force_load).with('known.rb').once
 
